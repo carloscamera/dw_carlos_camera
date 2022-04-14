@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./imagenes/logo.jpeg"><!--Icono de link-->
+    <link rel="stylesheet" href="/libs/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/estilo.css">
     <title>CholoBuss</title>
 </head>
 <body>
     <header class="contenedor-header" >
         <div class="img-logo" >
-            <a href="#"><img src="imagenes/logofinf.jpg" alt="imagen-header"></a><!--Imagen Cholobuss con delfines rojos-->
+            <a href="#"><img src="imagenes/logofinf1.png" alt="imagen-header"></a><!--Imagen Cholobuss con delfines rojos-->
         </div>
             <nav class="barra-navegacion" >
                 <ul>
@@ -24,9 +25,35 @@
             </nav>
     </header>
     <main class="index-caja">
-        <div class="promo-imagen">
-            <img src="imagenes/promocional.jpg" alt="imagen-promocional"><!--Imagen Promocional-->
+        <div class="carru-center">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/imagenes/carru01.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/imagenes/carru2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/imagenes/carru3.jpg" class="d-block w-100" alt="...">
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
         </div>
+        </div>
+    </main>
         <section class="caja-entera">
             <div class="caja1">
                 <img src="imagenes/img1.jpg" alt="">
@@ -45,7 +72,6 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus et, neque dolores repudiandae, dolorem harum vero tempora perferendis explicabo deserunt laboriosam, adipisicing elit, sit amet consectetur adipisicing elit. Fugiat beatae impedit voluptas, dolorum modi temporibus animi nobis corrupti dolores, molestias dolore facere recusandae, esse vero cupiditate odit nemo delectus amet beatae inventore sint aliquid reprehenderit!</p>
             </div>
         </section>
-    </main>
     <footer class="foot-cont"><!--Contenido del pie de pagina.-->
         <div class="redes-sociales">
             <h3>Nuestras redes sociales</h3>   
@@ -64,5 +90,6 @@
             </h4>
         </div>
     </footer>
+    <script src="/libs/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
