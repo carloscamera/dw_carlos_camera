@@ -11,32 +11,42 @@
     grid-template-areas:
     "img img img img"
     "img img img img"
-    ". nav nav .";
+    "nav nav nav nav";
     background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(253,193,104,1) 0%, rgba(251,128,128,1) 90% );
 }
 
-.img-logo{
+.logo{
     grid-area: img;
     width: 100%;
-    height: 100%;
-    }
-
+}
+.nav-bootstrap{
+    display: none;
+}
 .barra-navegacion{
     grid-area: nav;
-    margin-bottom: 40px;
     width: 100%;
 }
 .barra-navegacion ul{
     display: flex;
     list-style: none;
-    justify-content: space-between;
+    margin: 10px 0px;
+    padding: 0;
+    justify-content: space-evenly;
+    align-items: center;
 }
 .barra-navegacion ul li a{
-    /* margin-left: 15px; */
     text-decoration: none;
-    
-    font-size: 20px;
+    font-size: 16px;
     color: rgba(54, 50, 50, 0.877);
+    padding: 10px;
+    transition: .3s;
+}
+.barra-navegacion ul li a:hover{
+    background-color: rgba(255, 0, 0, 0.177);
+    color: white;
+    border: solid 1px black;
+    border-radius: 30px;
+    box-shadow: 10px 10px 30px white;
 }
 /* Header con grid y display flex para posicionar */
 
@@ -208,8 +218,8 @@
     padding: 20px;
     border-radius: 10px;
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
     border: 0px;
 }
 .elemento-de-formulario{
@@ -234,18 +244,30 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
     padding: 20px;
 }
 @media only screen and (max-width:768px){
-    .contenedor-header{
-        grid-template-columns: 100%;
-        grid-template-rows: 70% 30%;
+    /* .contenedor-header{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 30% 70px;
         height: 150px;
+        align-content: center;
+    }    */
+    .canvas-img{
+        width: 250px;
     }
-    .contenedor-header .navbar{
-        grid-row: 2/3;
+    .logo{
+        display: none;
     }
     .img-logo{
         grid-row: 1/2;
         height: 100%;
         width: 100%;
+    }
+    .nav-bootstrap{
+        display: block;
+        margin: 20px;
+    }
+    .contenedor-header .navbar{
+        display: block;
+        grid-row: 2/3;
     }
     .barra-navegacion{
         width: 100%;
@@ -254,11 +276,6 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
         grid-row: 2/3;
         font-size: 10px;
         margin: 0px;
-    }
-    .barra-navegacion nav ul {
-        align-items: center;
-    }
-    .contacto{
         display: none;
     }
     .caja-entera{
@@ -317,9 +334,6 @@ box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
     }
     .caja4 p{
         grid-row: 2/3;
-    }
-    .barra-navegacion ul li{
-        display: none;
     }
     .foot-cont{
         display: grid;
