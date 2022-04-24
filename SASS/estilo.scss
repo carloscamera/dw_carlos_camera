@@ -21,35 +21,39 @@
         grid-area: img;
         width: 100%;
     }
+
     .barra-navegacion{
         grid-area: nav;
         width: 100%;
-        .barra-navegacion ul{
-            display: flex;
-            list-style: none;
-            margin: 10px 0px;
-            padding: 0;
-            justify-content: space-evenly;
-            align-items: center;
-        }
-        .barra-navegacion ul li a{
-            text-decoration: none;
-            font-size: 16px;
-            color: $colores;
-            padding: 10px;
-            transition: .3s;
-            &:hover{    
-                background-color: $colores-background;
-                color: white;
-                border: solid 1px black;
-                border-radius: 30px;
-                box-shadow: 10px 10px 30px white;
-            }
-        }
     }
+
+.barra-navegacion ul{
+    display: flex;
+    list-style: none;
+    margin: 10px 0px;
+    padding: 0;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.barra-navegacion a{
+    text-decoration: none;
+    font-size: 16px;
+    color: $colores;
+    padding: 10px;
+    transition: .3s;
+}
+.barra-navegacion a:hover{    
+    background-color: $colores-background;
+    color: white;
+    border: solid 1px black;
+    border-radius: 30px;
+    box-shadow: 10px 10px 30px white;
+}
+}
+
     .nav-bootstrap{
         display: none;
-    }
+    
 }
 
 /* Header con grid y display flex para posicionar */
@@ -376,4 +380,3 @@
         background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,229,168,1) 0%, rgba(251,174,222,1) 100.7% );
     }
 }
-/* full responsive hasta 768*/
