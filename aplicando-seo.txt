@@ -1,0 +1,4 @@
+Incorpore keyword en todas las secciones.
+Incorpore descripcion en todas las secciones.
+Controle h1 en todas las secciones.
+Comprimi imagenes que fueron necesarias.

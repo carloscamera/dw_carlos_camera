@@ -1,3 +1,11 @@
+.foot-cont, .contenedor-header {
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(253, 193, 104) 0%, rgb(251, 128, 128) 90%);
+}
+
+.caja-entera {
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(255, 229, 168) 0%, rgb(251, 174, 222) 100.7%);
+}
+
 * {
   margin: 0%;
   padding: 0%;
@@ -9,7 +17,6 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-template-areas: "img img img img" "img img img img" "nav nav nav nav";
-  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(253, 193, 104) 0%, rgb(251, 128, 128) 90%);
 }
 .contenedor-header .logo {
   grid-area: img;
@@ -52,7 +59,6 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-template-areas: "derechos h3 habilitado" ". imgr .";
-  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(253, 193, 104) 0%, rgb(251, 128, 128) 90%);
 }
 .foot-cont .redes-sociales {
   grid-area: h3;
@@ -82,7 +88,6 @@
   flex-wrap: wrap;
   justify-content: space-around;
   height: 100%;
-  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(255, 229, 168) 0%, rgb(251, 174, 222) 100.7%);
 }
 .caja-entera .caja-entera img {
   width: 400px;
@@ -105,8 +110,8 @@
 .ultimas-aventuras {
   grid-column: 5/9;
   text-align: center;
-  margin-bottom: 20px;
   margin-top: 30px;
+  margin-bottom: 20px;
   text-decoration: underline;
 }
 

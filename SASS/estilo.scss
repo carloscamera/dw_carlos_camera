@@ -1,10 +1,10 @@
-@import "colores";
+@import "variables";
 
 
 
 *{
-    margin: 0%;
-    padding: 0%;
+    margin: map-get($map: $margen, $key: "0%" );
+    padding: map-get($map: $margen, $key: "0%" );
     box-sizing: border-box;
 }
 
@@ -16,7 +16,7 @@
     "img img img img"
     "img img img img"
     "nav nav nav nav";
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(253,193,104,1) 0%, rgba(251,128,128,1) 90% );
+    @extend %gradiante-footer-header;
     .logo{
         grid-area: img;
         width: 100%;
@@ -66,7 +66,7 @@
     grid-template-areas:
     "derechos h3 habilitado"
     ". imgr .";
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(253,193,104,1) 0%, rgba(251,128,128,1) 90% );
+    @extend %gradiante-footer-header;
     .redes-sociales{
         grid-area: h3;
     }
@@ -87,7 +87,7 @@
 /* Footer realizado */
 
 .promo-imagen img{
-    width: 100%;
+    width: map-get($map: $margen, $key: "full" );
 }
 .caja-entera{
     display: flex;
@@ -95,7 +95,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     height: 100%;
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,229,168,1) 0%, rgba(251,174,222,1) 100.7% );
+    @extend %main-gradiante;
     .caja-entera img{
         width: 400px;
     }
@@ -118,8 +118,7 @@
 .ultimas-aventuras{
     grid-column: 5/9;
     text-align: center;
-    margin-bottom: 20px;
-    margin-top: 30px;
+    @include margin-top-bottom(30px, 20px);
     text-decoration: underline;
 }
 .carousell{
@@ -173,7 +172,7 @@
 }
 .img-nacio2{
     width: 110%;
-    height: 92%;
+    height: map-get($map: $margen, $key: "92%" );
     margin: 5px;
 }
 /* Servicios Nacionales */
@@ -208,7 +207,7 @@
 }
 .img-inter2{
     width: 110%;
-    height: 92%;
+    height: map-get($map: $margen, $key: "92%");
     margin: 5px;
 }
 /* Servicios Internacionales */

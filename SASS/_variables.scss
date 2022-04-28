@@ -1,0 +1,24 @@
+//variables
+$colores:rgba(54, 50, 50, 0.877);
+$colores-background: rgba(11, 87, 229, 0.319);
+
+//extend
+%gradiante-footer-header{
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(253,193,104,1) 0%, rgba(251,128,128,1) 90% );
+}
+%main-gradiante{
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,229,168,1) 0%, rgba(251,174,222,1) 100.7% );
+}
+
+//mixin
+@mixin margin-top-bottom ($top, $bottom){
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+
+//maps
+$margen:(
+"full":100%,
+"92%":92%,
+"0%":0%,
+)
