@@ -285,8 +285,7 @@
 }
 
 
-@media only screen and (max-width:541px){
-
+    @media screen and (min-width: 350px) and (max-width: 540px){
     .canvas-img{
         width: 250px;
     }
@@ -315,245 +314,123 @@
         margin: 0px;
         display: none;
     }
-    .caja-entera{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: repeat (4,1fr);
     }
-    .caja1{
-        grid-row: 1/2;
-        grid-template-columns: 100%;
-        grid-template-rows: 50% 50%;
-    }
-    .caja1 img{
-        grid-row: 1/2;
-        width: 100%;
-        max-height: 300px;
-    }
-    .caja1 p{
-        grid-row: 2/3;
-    }
-    .caja2{
-        grid-row: 2/3;
-        grid-template-columns: 100%;
-        grid-template-rows: 50% 50%;
-    }
-    .caja2 img{
-        grid-row: 1/2;
-        width: 100%;
-        max-height: 300px;
-    }
-    .caja2 p{
-        grid-row: 2/3;
-    }
-    .caja3{
-        grid-row: 3/4;
-        grid-template-columns: 100%;
-        grid-template-rows: 50% 50%;
-    }
-    .caja3 img{
-        grid-row: 1/2;
-        width: 100%;
-        max-height: 300px;
-    }
-    .caja3 p{
-        grid-row: 2/3;
-    }
-    .caja4{
-        grid-row: 4/5;
-        grid-template-columns: 100%;
-        grid-template-rows: 50% 50%;
-    }
-    .caja4 img{
-        grid-row: 1/2;
-        width: 100%;
-        max-height: 300px;
-    }
-    .caja4 p{
-        grid-row: 2/3;
-    }
+    /*barra de navegacion*/
+
+    @media screen and (min-width: 350px) and (max-width: 540px){
     .foot-cont{
         display: grid;
-        grid-template-columns: repeat(5,1fr);
-        grid-template-areas: "rd rd dc dc eh" 
-        ;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas: 
+        "der soci habi"
+        ". imagg .";
     }
     .redes-sociales{
-        display: none;
+        grid-area: soci;
+    }
+    .img-redes{
+        grid-area: imagg;
+    }
+    .derechos-reservados{
+        grid-area: der;
+    }
+    .empresa-habilitada{
+        grid-area: habi;
+    }
+    .social-red{
+        text-align: center;
+        margin-top: 5px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgba(13, 9, 9, 0.753);
+        font-size: 10px;
+    }
+    .todoooos{
+        text-align: center;
+        margin-top: 5px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgba(13, 9, 9, 0.753);
+        font-size: 10px;
+    }
+    .emh{
+        text-align: center;
+        margin-top: 5px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgba(13, 9, 9, 0.753);
+        font-size: 10px;
     }
     .img-redes{
         display: flex;
-        grid-area: rd;
+        flex-direction: row;
+        justify-content: center;
     }
-    .img-redes .immmg{
-        width: 12%;
-        margin: 5px;
-    }
-    .derechos-reservados{
-        grid-area: dc;
-    }
-    .todoooos{
-        font-size: 15px;
-    }
-    .empresa-habilitada{
-        grid-area: eh;
-    }
-    .empresa-habilitada .emh{
-        font-size: 10px;
-    }
-    .caja-entera{
-        background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,229,168,1) 0%, rgba(251,174,222,1) 100.7% );
-    }
-
-    .contenedor-contacto{
-        display: grid;
-        grid-template-columns: repeat(8, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        @extend %main-gradiante;
-    }
-    .titulo-encabezado{
-        grid-column: 2/8;
-        grid-row: 1/2;
-    }
-    .imag-center{
-        width: 100%;
-        height: 200px;
-    }
-    .visitanos-map{
-        grid-column: 2/8;
-        grid-row: 2/2;
-    }
-    .caja-linkmap{
-        width: 100%;
-        height: 350px;
-        margin-top: 10px;
-    }
-    .contenedor-formulario{
-        grid-column: 2/8;
-        grid-row: 3/3;
-    }
-    .formu-centrado{
-        width: 100%;
-        height: 800px;
-        margin-bottom: 30px;
-    }
-
-    .contenedor-main-nosotros{
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-    }
-    .ultimas-aventuras{
-        grid-column: 1/12;
-        grid-row: 1/1;
-        text-align: center;
-    }
-    .encontra-lugar{
-        grid-column: 1/12;
-        grid-row: 2/2;
-    }
-    .encontra-lugar h3{
-        text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
-        color: rgba(28, 25, 25, 0.714);
-    }
-    .encontra-lugar p{
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
-        color: rgba(28, 25, 25, 0.714);
-    }
-    .carousell{
-        grid-column: 1/12;
-        grid-row: 3/3;
-        width: 100%;
-        margin-top: 10px;
-        margin-left: 12px;
-    }
-
-    .ser-na{
-        grid-template-columns: repeat(8, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-    }
-    .s-nac{
-        grid-column: 2/8;
-        grid-row: 1/1;
-        text-align: center;
-        color: rgba(28, 25, 25, 0.714);
-    }
-    .img-na{
-        grid-column: 1/5;
-        grid-row: 2/2;
-        height: 100%;
-        width: 100%;
-    }
-    .img-cio{
-        grid-column: 1/8;
-        grid-row: 4/4;
-        height: 100%;
-        width: 95%;
-        margin-bottom: 30px;
-    }
-
-    .ser-in{
-        grid-template-columns: repeat(8, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-    }
-    .s-int{
-        grid-column: 2/8;
-        grid-row: 1/1;
-        text-align: center;
-        color: rgba(28, 25, 25, 0.714);
-    }
-    .img-inter{
-        grid-column: 1/5;
-        grid-row: 2/2;
-        height: 100%;
-        width: 100%;
-    }
-    .img-nacion{
-        grid-column: 1/8;
-        grid-row: 4/4;
-        height: 100%;
-        width: 95%;
-        margin-bottom: 30px;
-    }
-}
-
-@media screen and (min-width:769px) and (max-width:1024px) {
-    
-    .foot-cont{
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(1,1fr);
-    }
-    .redes-sociales{
-        display: none;
-    }
-    .img-redes{
-        grid-column: 4/8;
-        grid-row: 1/1;
-        text-align: center;
-        margin-top: 14px;
-        margin-left: 50px;
-    }
-    .derechos-reservados{
-        grid-column: 1/5;
-        grid-row: 1/1;
-        text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 4px;
-    }
-    .empresa-habilitada{
-        grid-column: 8/12;
-        grid-row: 1/1;
-        text-align: center;
-        margin-top: 14px;
-        margin-left: 60px;
-    }
-        /*Footer*/
-
-        .caja1{
-            margin-top: 12px;
+    .immmg{
+        width: 10px;
+        height: 10px;
         }
+    }
+    /*footer*/
+
+    @media screen and (min-width: 350px) and (max-width: 540px){
+        .index-caja{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(4,1fr);
+        grid-template-areas: 
+        "carru carru carru"
+        "carru carru carru"
+        "carru carru carru";
+        }
+        .carru-center{
+            grid-area: carru;
+        }
+        .caja-entera{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(12,1fr);
+            grid-template-areas: 
+            "imi1 imi1 imi1"
+            "imi1 imi1 imi1"
+            ". . ."
+            "imi2 imi2 imi2"
+            "imi2 imi2 imi2"
+            ". . ."
+            "imi3 imi3 imi3"
+            "imi3 imi3 imi3"
+            ". . ."
+            "imi4 imi4 imi4"
+            "imi4 imi4 imi4"
+            ". . . ";
+        }
+        .caja1{
+            grid-area: imi1;
+        }
+        .caja2{
+            grid-area: imi2;
+        }
+        .caja3{
+            grid-area: imi3;
+        }
+        .caja4{
+            grid-area: imi4;
+        }
+    }
+/*index*/
 
 
+
+
+
+
+
+@media screen and (min-width: 541px) and (max-width: 720px){
+    .index-caja{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(12,1fr);
+        grid-template-areas: 
+        "fe fe fe"
+        "fe fe fe"
+        ". . .";
+    }
 }
-
-
