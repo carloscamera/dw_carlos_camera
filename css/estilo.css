@@ -435,13 +435,280 @@
   }
 }
 /*index*/
-@media screen and (min-width: 541px) and (max-width: 720px) {
-  .index-caja {
+@media screen and (min-width: 540px) and (max-width: 720px) {
+  .canvas-img {
+    width: 250px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .img-logo {
+    grid-row: 1/2;
+    height: 100%;
+    width: 100%;
+  }
+
+  .nav-bootstrap {
+    display: block;
+    margin: 20px;
+  }
+
+  .contenedor-header .navbar {
+    display: block;
+    grid-row: 2/3;
+  }
+
+  .barra-navegacion {
+    width: 100%;
+    height: 100%;
+    grid-column: 1/1;
+    grid-row: 2/3;
+    font-size: 10px;
+    margin: 0px;
+    display: none;
+  }
+
+  /*barra nav*/
+  .caja-entera {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /*index*/
+  .foot-cont {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(12, 1fr);
-    grid-template-areas: "fe fe fe" "fe fe fe" ". . .";
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "der soci habi" ". imagg .";
   }
+
+  .redes-sociales {
+    grid-area: soci;
+  }
+
+  .img-redes {
+    grid-area: imagg;
+  }
+
+  .derechos-reservados {
+    grid-area: der;
+  }
+
+  .empresa-habilitada {
+    grid-area: habi;
+  }
+
+  .social-red {
+    text-align: center;
+    margin-top: 5px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: rgba(13, 9, 9, 0.753);
+    font-size: 10px;
+  }
+
+  .todoooos {
+    text-align: center;
+    margin-top: 5px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: rgba(13, 9, 9, 0.753);
+    font-size: 10px;
+  }
+
+  .emh {
+    text-align: center;
+    margin-top: 5px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: rgba(13, 9, 9, 0.753);
+    font-size: 10px;
+  }
+
+  .img-redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .immmg {
+    width: 10px;
+    height: 10px;
+  }
+
+  /*footer*/
+}
+@media screen and (min-width: 720px) and (max-width: 1250px) {
+  .caja-entera {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 350px) and (max-width: 540px) {
+  .contenedor-contacto {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .titulo-encabezado {
+    grid-column: 2/12;
+    grid-row: 1;
+  }
+
+  .imag-center {
+    width: 100%;
+    height: 350px;
+  }
+
+  .visitanos-map {
+    grid-column: 2/12;
+    grid-row: 2;
+  }
+
+  .caja-linkmap {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .contenedor-formulario {
+    grid-column: 2/12;
+    grid-row: 3;
+  }
+
+  .formu-centrado {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .foot-cont {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+
+  .redes-sociales {
+    display: none;
+  }
+
+  .img-redes {
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: 5px;
+  }
+
+  .derechos-reservados {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .empresa-habilitada {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  /*contacto*/
+}
+@media screen and (min-width: 350px) and (max-width: 540px) {
+  .ser-na {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+
+  .s-nac {
+    grid-column: 2/6;
+    grid-row: 1/2;
+  }
+
+  .img-na {
+    grid-column: 1/6;
+    grid-row: 3/4;
+  }
+
+  .img-nacio1 {
+    height: 100%;
+    width: 300px;
+  }
+
+  .img-cio {
+    grid-column: 1/6;
+    grid-row: 5/6;
+  }
+
+  .img-nacio2 {
+    height: 100%;
+    width: 300px;
+  }
+
+  /*servicios nacionales*/
+}
+@media screen and (min-width: 350px) and (max-width: 540px) {
+  .ser-in {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+
+  .s-int {
+    grid-column: 2/6;
+    grid-row: 1/2;
+  }
+
+  .img-inter {
+    grid-column: 1/6;
+    grid-row: 3/4;
+  }
+
+  .img-inter1 {
+    height: 100%;
+    width: 300px;
+  }
+
+  .img-nacion {
+    grid-column: 1/6;
+    grid-row: 5/6;
+  }
+
+  .img-nacio2 {
+    height: 100%;
+    width: 300px;
+  }
+
+  /*servicios internacionales */
+}
+@media screen and (min-width: 350px) and (max-width: 540px) {
+  .contenedor-main-nosotros {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .ultimas-aventuras {
+    grid-column: 2/6;
+    grid-row: 1;
+  }
+
+  .ultimas-aventuras .h1 {
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    color: rgba(54, 50, 50, 0.877);
+  }
+
+  .encontra-lugar {
+    grid-column: 2/6;
+    grid-row: 2;
+  }
+
+  .carousell {
+    grid-column: 2/6;
+    grid-row: 3;
+  }
+
+  /* ultimas excursiones*/
 }
 
 /*# sourceMappingURL=estilo.css.map */
