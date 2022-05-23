@@ -1,9 +1,9 @@
 .foot-cont, .contenedor-header {
-  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(253, 193, 104) 0%, rgb(251, 128, 128) 90%);
+  background-color: hsl(4, 65%, 49%);
 }
 
 .contenedor-contacto, .caja-entera {
-  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(255, 229, 168) 0%, rgb(251, 174, 222) 100.7%);
+  background-color: hsl(2, 52%, 75%);
 }
 
 * {
@@ -113,7 +113,7 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(7, 1fr);
-  background-image: linear-gradient(92.7deg, rgb(245, 212, 212) 8.5%, rgb(252, 251, 224) 90.2%);
+  background-color: hsl(2, 52%, 75%);
 }
 
 .ultimas-aventuras {
@@ -151,7 +151,7 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(8, 1fr);
-  background-image: linear-gradient(92.7deg, rgb(245, 212, 212) 8.5%, rgb(252, 251, 224) 90.2%);
+  background-color: hsl(2, 52%, 75%);
   height: 1000px;
 }
 
@@ -191,7 +191,7 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(8, 1fr);
-  background-image: linear-gradient(92.7deg, rgb(245, 212, 212) 8.5%, rgb(252, 251, 224) 90.2%);
+  background-color: hsl(2, 52%, 75%);
   height: 1000px;
 }
 
